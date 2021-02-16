@@ -1,0 +1,12 @@
+![an073jdwgkc1ztij8sj7](https://user-images.githubusercontent.com/64128375/108077545-64be8e00-704b-11eb-870e-93decc671978.jpg)
+
+# ⚔ Front-end Challenges
+
+Develop and learn new front-end skills by creating different layout components.
+
+
+## List Challenges
+
+| Challenges                                                                                                        | Languages      | Level   | Status                                                                              | Deploy                                                                                                   |
+|:------------------------------------------------------------------------------------------------------------------|:---------------|:--------|:------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------|
+| [Profile card component](https://github.com/danieln18/challenges_front-end/tree/main/profile-card-component-main) | HTML / CSS     | Newbier | Completed :heavy_check_mark: | ![Twitter URL](https://img.shields.io/twitter/url?color=black&label=Deploy&logo=Vercel&style=social&url=https%3A%2F%2Fwww.w3schools.com%2Ftags%2Ftag_button.asp) |
