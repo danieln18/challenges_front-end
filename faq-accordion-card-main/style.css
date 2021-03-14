@@ -1,0 +1,332 @@
+:root {
+    --Soft-violet: hsl(273, 75%, 66%);
+    --Soft-blue: hsl(240, 73%, 65%);
+    --Soft-blue-dark: #4a3c9c;
+
+    --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --Soft-red: hsl(14, 88%, 65%);
+
+    --Very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --Dark-grayish-blue: hsl(240, 6%, 50%);
+
+    --Light-grayish-blue: hsl(240, 5%, 91%);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(var(--Soft-violet),var(--Soft-blue)) fixed;
+
+    font-size: 12px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0px 30px 30px -10px var(--Soft-blue-dark);
+
+    width: 70%;
+    max-width: 1000px;
+    height: 500px;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+
+    position: relative; /* apturar imagens */
+}
+
+.container::before {
+    content: '';
+    
+    width: 100%;
+    height: 100%;
+    
+    background: url("./images/illustration-woman-online-desktop.svg") no-repeat;
+    background-size: 100%;
+    /* background-position-x: calc(34% + -19.9%), right; */
+    background-position-x: calc(100% + -85px), center;
+    /* background-position-y: calc(49% + 10px), top; */
+    background-position-y: calc(85% - 50px), top;
+
+    position: absolute;
+    z-index: 1;
+}
+
+.container #woman {
+    display: none;
+}
+
+.container #pattern {
+    content: '';
+    
+    width: 100%;
+    height: 100%;
+    
+    background: url("./images/bg-pattern-desktop.svg") no-repeat;
+    background-size: auto;
+    background-position-x: calc(100% + -75px), left;
+    background-position-y: calc(50% + -80px), top;
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.container #box {
+    content: '';
+    
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
+    
+    background: url("./images/illustration-box-desktop.svg") no-repeat center;
+    background-size: calc(34% - 25px);
+
+    position: absolute;
+    top: calc(8% - -1%);
+    left: -49%;
+    z-index: 10;
+}
+
+.divisor {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: 80%;
+    height: 356px;
+
+    margin: 4.5rem 0;
+    
+    position: relative;  /*apturar input*/
+}
+
+.divisor h1 {
+    font-size: 2rem;
+
+    text-align: left;
+
+    margin-bottom: 1.3rem;
+}
+
+.divisor section {
+    border-bottom: 1px solid var(--Light-grayish-blue);
+}
+
+.divisor section input{
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.divisor section h2{
+    padding: 1rem 0;
+    
+    font-size: .9rem;
+    font-weight: 100;
+
+    color: var(--Very-dark-desaturated-blue);
+}
+
+.divisor section h2 label{
+    cursor: pointer;
+}
+
+.divisor section h2 label:hover{
+    color: var(--Soft-red);
+}
+
+.divisor section h2 label::before{
+    content: '';
+
+    width: 1rem;
+    height: 1rem;
+
+    position: absolute;
+    right: 0;
+
+    background: url('./images/icon-arrow-down.svg') no-repeat;
+    background-position-y: center;
+}
+
+.divisor section p {
+    max-height: 0;
+    
+    font-size: .9rem;
+    line-height: 1.3rem;
+
+    color: var(--Dark-grayish-blue);
+
+    overflow: hidden;
+    transition: .4s max-height ease; 
+}
+
+input[type="radio"]:checked ~ h2 label::before{
+    transform: scaleY(-1);
+}
+
+input[type="radio"]:checked ~ h2 {
+    font-weight: 700;
+}
+
+input[type="radio"]:checked ~ h2 ~ p {
+    margin-bottom: 1rem;
+    max-height: 80px;
+}
+
+@media screen and (max-width:1200px){
+    .container::before {
+        content: '';
+        
+        width: 100%;
+        height: 100%;
+        
+        background: url("./images/illustration-woman-online-desktop.svg") no-repeat;
+        background-size: 100%;
+    
+        position: absolute;
+        top: 21%;
+        left: -20%;
+        z-index: 1;
+    }
+
+    .container #box {
+        top: calc(18% - 12%);
+        left: calc(-49% + -10px);
+        z-index: 10;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    
+    body {
+        height: calc(100% + 200px);
+    }
+
+    main {
+        display: block;
+        
+        width: 500px;
+        height: 570px;
+
+        padding: 2rem;
+        margin-top: 80px;
+    }
+
+    .container {
+        width: 300px;
+        height: 250px;
+
+
+        margin: 0 auto;
+
+        position: relative;
+    }
+
+    .container::before {
+        display: none;
+    }
+
+    .container #woman {
+        display: block;
+        margin: 0 auto;
+
+        width: 90%;
+        height: 90%;
+
+        margin-top: -140px;
+        margin-left: -5%;
+
+        position: relative;
+        z-index: 1;
+    }
+
+    .container #pattern {
+        content: '';
+    
+        width: 100%;
+        height: 100%;
+        
+        background: url("./images/bg-pattern-mobile.svg") no-repeat;
+        background-size: 80%;
+        background-position-x: 15px, left;
+        background-position-y: 130px, top;
+        
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    .container #box {
+        display: none;
+    }
+    
+    .divisor {
+        display: block;
+
+        width: 100%;
+
+        margin: 0;
+        
+        position: relative;  /*apturar input*/
+    }
+
+    .divisor h1 {
+        text-align: center;
+        margin: 1rem 0;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    html {
+        min-width: 320px;
+        min-height: 696px;
+    }
+
+    main {
+        display: block;
+        
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    main {
+        width: 100%;
+        border-radius: 20px;
+        margin: 0;
+    }
+
+    main section h2 label{
+        font-size: .8rem;
+    }
+
+    .container {
+        width: 100%;
+    }
+}
