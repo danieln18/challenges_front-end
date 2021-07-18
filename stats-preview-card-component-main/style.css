@@ -113,6 +113,12 @@ div.card-component .filtro{
     z-index: 1;
 }
 
+@media only screen and (max-width: 1234px) {
+    div.container {
+        width: 100%;
+    }
+}
+
 @media only screen and (max-width: 900px) {
     div.card-component {
         background: var(--Dark-desaturated-blue);
@@ -126,10 +132,6 @@ div.card-component .filtro{
     div.card-component div.text{
         position: relative;
         z-index: 2;
-    }
-
-    div.container {
-        width: 100%;
     }    
 
     div.card-component img{
