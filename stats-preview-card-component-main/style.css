@@ -39,7 +39,7 @@ div.card-component {
 }
 
 div.card-component div.text{
-    align-items: center;
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
     grid-area: A;
@@ -61,6 +61,10 @@ div.text h1 span{
     color: var(--Soft-violet);
 }
 
+div.container {
+    width: 80%;
+}
+
 div.text p{
     color: var(--Slightly-transparent-white-main);
     font-family: 'Inter', sans-serif;
@@ -80,7 +84,8 @@ div.card-component div.info h2{
     font-family: 'Inter', sans-serif;
 }
 
-div.card-component div.info h2 p{
+div.card-component div.info h2 span{
+    display: block;
     color: var(--Slightly-transparent-white-stat);
     font-size: .5em;
     font-weight: 100;
@@ -122,6 +127,10 @@ div.card-component .filtro{
         position: relative;
         z-index: 2;
     }
+
+    div.container {
+        width: 100%;
+    }    
 
     div.card-component img{
         filter: contrast(100%) brightness(60%);
@@ -166,6 +175,7 @@ div.card-component .filtro{
     }
 
     div.card-component div.text{
+        align-items: center;
         flex-direction: column;
         grid-area: B;
         padding: 0;
