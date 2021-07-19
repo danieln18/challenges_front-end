@@ -58,30 +58,39 @@ section {
     border-radius: 0px 0px 8px 8px;
 }
 
-section div.text h2 {
+section div.text h1 {
     font-family: 'Big Shoulders Display', cursive;
     font-size: 3em;
     margin-bottom: 20px;
     text-transform: uppercase;
 }
 
-section div.text p {
-    font-family: 'Lexend Deca', sans-serif;
-    font-size: 1em;
-    line-height: 1.8em;
-}
-
 section div.button-learn-more {
     align-items: center;
-    background-color: white;
+    background: white;
     border-radius: 100px;
     color: black;
+    cursor: pointer;
     display: flex;
     font-family: 'Lexend Deca', sans-serif;
     height: 50px;
     justify-content: center;
     mix-blend-mode: screen;
+    pointer-events: all;
     width: 65%;
+}
+
+section div.button-learn-more:hover {
+    mix-blend-mode: none;
+    background:hsla(0, 0%, 95%, 0);
+    color: white;
+    border: 1px solid white;
+}
+
+section div.text p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1em;
+    line-height: 1.8em;
 }
 
 @media only screen and (min-width: 426px) {
