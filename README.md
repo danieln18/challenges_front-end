@@ -13,4 +13,5 @@ Develop and learn new front-end skills by creating different layout components.
 | [FAQ accordion card](https://github.com/danieln18/challenges_front-end/tree/main/Frontend-mentor/faq-accordion-card-main) | HTML / CSS     | Newbier | Completed :heavy_check_mark: | [Vercel - Deploy](https://faq-accordion-card-beta-lime.vercel.app/) |
 | [Stats preview card component](https://github.com/danieln18/challenges_front-end/tree/main/Frontend-mentor/stats-preview-card-component-main) | HTML / CSS     | Newbier | Completed :heavy_check_mark: | [Vercel - Deploy](https://stats-preview-card-component-main-pearl-pi.vercel.app/) |
 | [3-column preview card component](https://github.com/danieln18/challenges_front-end/tree/main/Frontend-mentor/3-column-preview-card-component-main) | HTML / CSS     | Newbier | Completed :heavy_check_mark: | [Vercel - Deploy](https://challenges-front-end.vercel.app/) |
+| [Social proof section](https://github.com/danieln18/challenges_front-end/tree/main/Frontend-mentor/social-proof-section-master) | HTML / CSS     | Newbier | Completed :heavy_check_mark: | [Vercel - Deploy](https://social-proof-section-master-five-fawn.vercel.app/) |
 
