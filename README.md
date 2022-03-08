@@ -15,4 +15,4 @@ Develop and learn new front-end skills by creating different layout components.
 | [3-column preview card component](https://github.com/danieln18/challenges_front-end/tree/main/Frontend-mentor/3-column-preview-card-component-main) | HTML / CSS     | Newbier | Completed :heavy_check_mark: | [Vercel - Deploy](https://challenges-front-end.vercel.app/) |
 | [Social proof section](https://github.com/danieln18/challenges_front-end/tree/main/Frontend-mentor/social-proof-section-master) | HTML / CSS     | Newbier | Completed :heavy_check_mark: | [Vercel - Deploy](https://social-proof-section-master-five-fawn.vercel.app/) |
 | [qr-code-component-main](https://github.com/danieln18/challenges_front-end/tree/main/Frontend-mentor/qr-code-component-main) | HTML / CSS     | Newbier | Completed :heavy_check_mark: |  |
-
+| [nft-preview-card-component-main](https://github.com/danieln18/challenges_front-end/tree/main/Frontend-mentor/nft-preview-card-component-main) | HTML / CSS     | Newbier | Completed :heavy_check_mark: |  |
