@@ -1,0 +1,172 @@
+:root {
+    /* ### Primary */
+
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Cyan-opacity: hsla(178, 100%, 50%, 0.5);
+
+    /* ### Neutral */
+
+    --Very-dark-blue: hsl(217, 54%, 11%);
+    --Very-dark-blue-two: hsl(216, 50%, 16%);
+    --Very-dark-blue-three: hsl(215, 32%, 27%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--Very-dark-blue);
+    font-size: 112.5%;
+}
+
+main .card-nft {
+    width: 350px;
+
+    padding: 1.5rem;
+
+    background-color: var(--Very-dark-blue-two);
+    border-radius: 1rem;
+    position: relative;
+}
+
+.card-nft .img-card{
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.card-nft .display-overlay::before{
+    content: '';
+    background: var(--Cyan-opacity) url(./images/icon-view.svg) no-repeat center;
+    border-radius: 0.5rem;
+    width: 300px;
+    height: 300px;
+
+
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+
+    transition: .4s ease-in-out;
+}
+
+.card-nft .display-overlay:hover::before{
+    opacity: 1;
+}
+
+.card-nft h1 {
+    color: white;
+    font-size: 133%;
+    font-weight: 600;
+
+    margin-bottom: 1rem;
+}
+
+.card-nft h1:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+.card-nft p.description {
+    color: var(--Soft-blue);
+    font-weight: 300;
+    line-height: 2rem;
+
+    margin-bottom: 1rem;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 1.5rem;
+    font-size: 88.8%;
+}
+
+.container p {
+    display: flex;
+    align-items: center;
+}
+
+.container img {
+    margin-right: .5rem;
+}
+
+.card-nft .eth-price {
+    color: var(--Cyan);
+    font-weight: 400;
+}
+
+.card-nft .publication-time {
+    color: var(--Soft-blue);
+}
+
+.creator:before {
+  background-color: var(--Very-dark-blue-three);
+  content: "";
+  display: block;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  z-index: 1;
+  margin-bottom: 15px;
+}
+
+.creator {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+}
+
+.flex-container img{
+    width: 13%;
+    margin-right: 1rem;
+    border: 1px solid white;
+    border-radius: 100%;
+}
+
+.flex-container .creation-of {
+    color: var(--Soft-blue);
+    font-size: 88.8%;
+}
+
+.flex-container .creation-of a {
+    text-decoration: none;
+    color: white;
+}
+
+.flex-container .creation-of a:hover {
+    color: var(--Cyan);
+}
+
+.attribution {
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
+
+@media (max-width:400px) {
+    main .card-nft {
+        width: 250px;
+    }
+}
