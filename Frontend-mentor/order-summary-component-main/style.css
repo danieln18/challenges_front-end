@@ -1,0 +1,157 @@
+:root {
+    /* ### Primary */
+
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+
+    /* ### Neutral */
+
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Desaturated-blue-opacity: hsla(224, 23%, 55%, 0.5);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--Pale-blue);
+}
+
+.card-order-summary {
+    width: 300px;
+
+    background-color: white;
+    border-radius: 1rem;
+    padding-bottom: .5rem;
+    text-align: center;
+}
+
+.card-order-summary .image-card {
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+    margin-bottom: 1.5rem;
+}
+
+.card-order-summary  h1.title {
+    font-size: 137.5%;
+    color: var(--Dark-blue);
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+}
+
+.card-order-summary  p, span {
+    font-size: 87.5%;
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: var(--Desaturated-blue);
+    margin-bottom: 1.5rem;
+}
+
+.card-order-summary p.description {
+    padding: 0 2rem;
+}
+
+.annual-plan {
+    width: 85%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1rem;
+
+    background-color: var(--Very-pale-blue);
+    border-radius: .8rem;
+    margin-bottom: 1.5rem;
+
+}
+
+.annual-plan .icon-music {
+    width: 45px;
+    height: 45px;
+}
+
+.annual-plan .info-plan {
+    text-align: left;
+}
+
+.annual-plan .info-plan p {
+    margin: 0;
+    font-weight: 900;
+    color: var(--Dark-blue);
+}
+
+.annual-plan a {
+    font-size: 12px;
+    margin-left: 1.2rem;
+    font-weight: 700;
+    color: var(--Bright-blue);
+}
+
+.annual-plan a:hover{
+    opacity: 60%;
+}
+
+.button {
+    display: block;
+    width: 85%;
+    margin: auto;
+
+    text-align: center;
+    text-decoration: none;
+    font-size: 87.5%;
+    font-weight: 700;
+
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+.button.payment{
+    background-color: var(--Bright-blue);
+    box-shadow: 0px 10px 20px var(--Desaturated-blue-opacity);
+    color: white;
+    margin-bottom: 1rem;
+    opacity: 1;
+
+    transition: .4s ease-in-out opacity;
+}
+
+.button.payment:hover{
+    opacity: 80%;
+}
+
+.button.cancel {
+    color: var(--Desaturated-blue);
+    transition: .4s ease-in-out color;
+}
+
+.button.cancel:hover {
+    color: var(--Dark-blue);
+}
+
+
+.attribution { font-size: 11px; text-align: center; margin-top: 50px;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media screen and (min-width: 800px) {
+    .card-order-summary {
+        width: 350px;
+    }
+}
