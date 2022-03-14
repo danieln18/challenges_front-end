@@ -17,3 +17,4 @@ Develop and learn new front-end skills by creating different layout components.
 | [qr-code-component-main](https://github.com/danieln18/challenges_front-end/tree/main/Frontend-mentor/qr-code-component-main) | HTML / CSS     | Newbier | Completed :heavy_check_mark: |  |
 | [nft-preview-card-component-main](https://github.com/danieln18/challenges_front-end/tree/main/Frontend-mentor/nft-preview-card-component-main) | HTML / CSS     | Newbier | Completed :heavy_check_mark: |  |
 | [order-summary-component-main](https://github.com/danieln18/challenges_front-end/tree/main/Frontend-mentor/order-summary-component-main) | HTML / CSS     | Newbier | Completed :heavy_check_mark: |  |
+| [order-summary-component-main](https://github.com/danieln18/challenges_front-end/tree/main/Frontend-mentor/article-preview-component-master) | HTML / CSS     | Newbier | Completed :heavy_check_mark: |  |
