@@ -13,29 +13,39 @@
     font-family: 'Manrope', sans-serif;
 }
 
-body {
+html {
     width: 100vw;
     height: 100vh;
-    
+
+}
+
+body {
+    width: 100%;
+    height: 100%;
     background-color: var(--Light-Grayish-Blue);
     font-size: 81.25%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 main {
     width: 100%;
     height: 100%;
-
+    
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 main .article-card {
     width: 320px;
     background-color: white;
     border-radius: .8rem;
-    box-shadow: 0px 15px 20px rgba(158, 175, 194, 0.30); ;
+    box-shadow: 0px 15px 20px rgba(158, 175, 194, 0.30);
 }
 
 .article-card .img-bg {
@@ -125,8 +135,92 @@ main .article-card {
 }
 
 .hidden {
-    visibility: hidden;
+    display: none;
 }
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media  (min-width: 768px) {
+    main .article-card {
+        width: 80%;
+        max-width: 700px;
+
+        display: grid;
+        grid-template-columns: 35% 1fr;
+        grid-template-rows: 1fr 30%;
+        grid-template-areas: "img text"
+                             "img user";
+    }
+
+    .article-card .img-bg {
+        grid-area: img;
+        height: 100%;
+        border-radius: .8rem 0 0 .8rem;
+
+        object-fit: cover;
+        object-position: 10%;
+    }
+
+    .container-text {
+        padding: 0 2.5rem;
+    }
+
+    .container-text h1 {
+        font-size: 22px;
+    }
+
+    .container-share {
+        background-color: white;
+        margin-top: 0;
+        border-radius: 0 0 .8rem 0;
+    }
+
+    .info-user {
+        display: grid;
+        grid-template-columns: 1fr 65% 1fr;
+        padding: 1rem 2.5rem;
+    }
+
+    .info-user div {
+        padding-left: .3rem;
+    }
+
+    .display-overlay {
+        width: 260px;
+        height: 50px;
+        top: -55px;
+        left: 50%;
+        border-radius: .6rem;
+        padding: 0 rem;
+        box-shadow: 0px 15px 20px rgba(158, 175, 194, 0.30);
+    }
+
+    .display-overlay::after {
+        content: '';
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        width: 25px;
+        height: 25px;
+        background-color: var(--Very-Dark-Grayish-Blue);
+        transform: rotate(45deg)
+
+    }
+
+    .display-overlay p{
+        letter-spacing: .3rem;
+    }
+
+    .display-overlay .icon-share {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 769px){
+    .display-overlay {
+        left: 56%;
+    }
+}
